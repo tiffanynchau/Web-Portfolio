@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
+import logo from "../assets/img/logo.png";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -40,17 +40,20 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
+              {/* ABOUT SECTION */}
               <Nav.Link
-                href="/home"
+                href="#about"
                 className={
-                  activeLink === "home" ? "active navbar-link" : "navbar-link"
+                  activeLink === "about" ? "active navbar-link" : "navbar-link"
                 }
                 onClick={() => onUpdateActiveLink("home")}
               >
-                Home
+                About
               </Nav.Link>
+
+              {/* EXPERIENCES SECTION  */}
               <Nav.Link
-                href="/experiences"
+                href="#experiences"
                 className={
                   activeLink === "experiences"
                     ? "active navbar-link"
@@ -60,8 +63,10 @@ export const NavBar = () => {
               >
                 Experiences
               </Nav.Link>
+
+              {/* PROJECTS SECTION  */}
               <Nav.Link
-                href="/projects"
+                href="#projects"
                 className={
                   activeLink === "projects"
                     ? "active navbar-link"
@@ -70,6 +75,17 @@ export const NavBar = () => {
                 onClick={() => onUpdateActiveLink("projects")}
               >
                 Projects
+              </Nav.Link>
+
+              {/* RESUME SECTION  */}
+              <Nav.Link
+                href="#resume"
+                className={
+                  activeLink === "resume" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("resume")}
+              >
+                Resume
               </Nav.Link>
             </Nav>
             <span className="navbar-text">

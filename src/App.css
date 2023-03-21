@@ -108,6 +108,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
+    
 }
 span.navbar-text {
     display: flex;
@@ -141,6 +142,7 @@ span.navbar-text {
 }
 .social-icon a:hover::before {
     transform: scale(1);
+    background-color: yellow;
 }
 .social-icon a img {
 	width: 40%;
@@ -177,6 +179,8 @@ span.navbar-text {
 }
 .navbar-text button:hover {
   color: #121212;
+  background-color: yellow;
+  
 }
 .navbar-text button:hover::before {
 	content: "";
@@ -335,13 +339,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 50%;
   margin: 0 auto 15px auto;
 }
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
-}
+
 
 /************ Projects Css ************/
 .project {
@@ -471,7 +469,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -522,6 +519,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button span {
   z-index: 1;
   position: relative;
+
 }
 .contact form button:hover {
   color: #fff;
@@ -548,6 +546,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 .newsletter-bx {
   background: #FFFFFF;
@@ -618,4 +617,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+/* About Me */
+.aboutMe {
+  color: green;
 }

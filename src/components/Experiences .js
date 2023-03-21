@@ -33,7 +33,7 @@ export const Experiences = () => {
         <Row>
           <Col>
             <div className="skill-bx">
-              <h2>Skills</h2>
+              <h2>EXPERIENCES</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 <br></br>Lorem ipsum dolor sit amet consectetur adipisicing
@@ -65,7 +65,6 @@ export const Experiences = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
   );
 };
