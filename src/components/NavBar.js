@@ -3,7 +3,6 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -42,7 +41,7 @@ export const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link
-                href="#home"
+                href="/home"
                 className={
                   activeLink === "home" ? "active navbar-link" : "navbar-link"
                 }
@@ -51,16 +50,18 @@ export const NavBar = () => {
                 Home
               </Nav.Link>
               <Nav.Link
-                href="#skills"
+                href="/experiences"
                 className={
-                  activeLink === "skills" ? "active navbar-link" : "navbar-link"
+                  activeLink === "experiences"
+                    ? "active navbar-link"
+                    : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("skills")}
+                onClick={() => onUpdateActiveLink("experiences")}
               >
-                Skills
+                Experiences
               </Nav.Link>
               <Nav.Link
-                href="#projects"
+                href="/projects"
                 className={
                   activeLink === "projects"
                     ? "active navbar-link"
