@@ -8,43 +8,38 @@ import { ProjectCard } from "./ProjectCard";
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
+      title: "Docketeer",
       description: "Design & Development",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
+      title: "Yumm!!",
       description: "Design & Development",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
+      title: "HireHero",
       description: "Design & Development",
       imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
+      title: "Pawstask",
       description: "Design & Development",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
+      title: "Activ8",
       description: "Design & Development",
       imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
     },
   ];
 
   return (
-    <section className="projects" id="project">
+    <section className="project" id="project">
       <Container>
         <Row>
           <Col size={12}>
-            <h2>Projects</h2>
+            <h2>PROJECTS</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -52,18 +47,6 @@ export const Projects = () => {
               type and scrambled it to make a type specimen book.
             </p>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              <Nav
-                variant="pills"
-                className="nav-pills mb-5 justify-content-center align-items-center"
-                id="pills-tab"
-              >
-                <Nav.Item>
-                  <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                </Nav.Item>
-              </Nav>
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <Row>

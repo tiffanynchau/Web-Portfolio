@@ -17,7 +17,6 @@ export const Banner = () => {
               robust, scalable solutions that meet the unique needs of my
               clients.
             </p>
-
             <button onClick={() => console.log("connect")}>
               Let's connect <ArrowRightCircle size={25} />
             </button>
