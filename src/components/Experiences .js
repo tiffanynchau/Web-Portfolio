@@ -1,6 +1,6 @@
-import { Container, Row, Col } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
+import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Exptab1 } from "./Exptab1";
+import { Exptab2 } from "./Exptab2";
 
 export const Experiences = () => {
   return (
@@ -10,27 +10,34 @@ export const Experiences = () => {
           <Col>
             <div className="skill-bx">
               <h2>EXPERIENCES</h2>
+              <hr></hr>
 
-              <Row>
-                <Col className="col-2">
-                  <ButtonGroup vertical>
-                    <Button>Button</Button>
-                    <Button>Button</Button>
-
-                    <Button>Button</Button>
-                    <Button>Button</Button>
-                  </ButtonGroup>
-                </Col>
-                <Col className="col-8">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maxime mollitia, molestiae quas vel sint commodi repudiandae
-                    consequuntur voluptatum laborum numquam blanditiis harum
-                    quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                    ea
-                  </p>
-                </Col>
-              </Row>
+              <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+                <Row>
+                  <Col sm={3}>
+                    <Nav variant="pills" className="flex-column">
+                      <Nav.Item>
+                        <Nav.Link eventKey="first">
+                          Docketeer Open Source
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="second">Google</Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                  </Col>
+                  <Col sm={9}>
+                    <Tab.Content>
+                      <Tab.Pane eventKey="first">
+                        <Exptab1 />
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                        <Exptab2 />
+                      </Tab.Pane>
+                    </Tab.Content>
+                  </Col>
+                </Row>
+              </Tab.Container>
             </div>
           </Col>
         </Row>
