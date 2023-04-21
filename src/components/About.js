@@ -4,16 +4,17 @@ import selfphoto from "../assets/img/photo.JPG";
 
 export const About = () => {
   return (
-    <section className="aboutMe">
+    <section className="aboutMe" id="about">
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <h2>About Me</h2>
             <p>
-              Hi there! My name is Tiffany Chau, and I am a software engineer
-              based in Austin, Texas. I am passionate about building web
-              applications that not only look great but also perform
-              exceptionally well.
+              Hi there! My name is
+              <span style={{ color: "#64ffda" }}> Tiffany Chau</span>, and I am
+              a software engineer based in Austin, Texas. I am passionate about
+              building web applications that not only look great but also
+              perform exceptionally well.
             </p>
             <p>
               Throughout my career, I have worked on various projects, ranging
@@ -25,17 +26,19 @@ export const About = () => {
             <p>
               Here are a few technologies I’ve been working with recently:
               <ul>
-                <Row>
+                <Row style={{ color: "#64ffda" }}>
                   <Col>
                     <li> JavaScript (ES6+)</li>
                     <li> TypeScript</li>
                     <li> React</li>
                     <li> Node.js</li>
+                    <li> Express</li>
                   </Col>
                   <Col>
-                    <li> Express</li>
-                    <li> HTML5/CSS3</li>
+                    <li> HTML5 / CSS3</li>
                     <li> SQL / NoSQL</li>
+                    <li> Bootstrap</li>
+                    <li> Material-UI </li>
                   </Col>
                 </Row>
               </ul>

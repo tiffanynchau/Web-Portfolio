@@ -1,36 +1,42 @@
-import { Container, Row, Col, Nav, Tab } from "react-bootstrap";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import { Container, Row, Col, Tab } from "react-bootstrap";
+import projImg1 from "../assets/img/DockLogo.png";
+import projImg2 from "../assets/img/HireHeroLogo.png";
+import projImg3 from "../assets/img/yummLogo.png";
+import projImg4 from "../assets/img/PawsLogo.png";
+import projImg5 from "../assets/img/Act8Logo.png";
 import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
   const projects = [
     {
       title: "Docketeer",
-      description: "Design & Development",
+      description: "Containers management platform for Docker tool",
       imgUrl: projImg1,
-    },
-    {
-      title: "Yumm!!",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      url: "https://github.com/open-source-labs/Docketeer",
     },
     {
       title: "HireHero",
-      description: "Design & Development",
+      description: "Simple and effortless job application management",
+      imgUrl: projImg2,
+      url: "https://github.com/HireHero/HireHero",
+    },
+    {
+      title: "Yumm!!",
+      description: "Socical media platform for food enthusiasts",
       imgUrl: projImg3,
+      url: "https://github.com/CTRI12-tassled-wobbegong/Yumm",
     },
     {
       title: "Pawstask",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      description: "Aesthetic, interactive task management application",
+      imgUrl: projImg4,
+      url: "https://github.com/tiffanynchau/PawsTask",
     },
     {
       title: "Activ8",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      description: "Activities generator for teams",
+      imgUrl: projImg5,
+      url: "https://github.com/Activ-8/Activ-8",
     },
   ];
 
@@ -38,14 +44,9 @@ export const Projects = () => {
     <section className="project" id="project">
       <Container>
         <Row>
-          <Col size={12}>
-            <h2>PROJECTS</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
+          <Col>
+            <h2>Projects</h2>
+            <hr></hr>
             <Tab.Container id="projects-tabs" defaultActiveKey="first">
               <Tab.Content>
                 <Tab.Pane eventKey="first">
@@ -55,14 +56,11 @@ export const Projects = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">Loren Ipsum</Tab.Pane>
-                <Tab.Pane eventKey="third">Loren Ipsum</Tab.Pane>
               </Tab.Content>
             </Tab.Container>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
     </section>
   );
 };
