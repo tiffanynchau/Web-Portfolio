@@ -9,9 +9,8 @@ export const Experiences = () => {
         <Row>
           <Col>
             <div className="skill-bx">
-              <h2>EXPERIENCES</h2>
+              <h2>Experiences</h2>
               <hr></hr>
-
               <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                 <Row>
                   <Col sm={3}>

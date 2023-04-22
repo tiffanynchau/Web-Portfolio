@@ -1,6 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
-import logo from "../assets/img/logo.png";
-
+import { Container, Row } from "react-bootstrap";
 
 export const Footer = () => {
   return (
@@ -8,7 +6,7 @@ export const Footer = () => {
       <Container>
         <Row>
           <hr></hr>
-          <p>Designed & Built by Tiffany Chau</p>
+          <p>Designed & Built by Tiffany Chau - 2023</p>
         </Row>
       </Container>
     </footer>

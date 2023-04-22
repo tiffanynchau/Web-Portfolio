@@ -1,19 +1,17 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg";
+import contactImg from "../assets/img/contact-img.png";
 
 export const Contact = () => {
   const formInitialDetails = {
-    firstName: "",
-    lastName: "",
+    name: "",
     email: "",
-    phone: "",
     message: "",
   };
 
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
-  const [status, setStatus] = useState({});
+  const [status, setStatus] = useState("Submit");
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -22,9 +20,10 @@ export const Contact = () => {
     });
   };
 
-  const handelSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
+
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
@@ -33,7 +32,7 @@ export const Contact = () => {
       body: JSON.stringify(formDetails),
     });
     setButtonText("Send");
-    let result = response.json();
+    let result = await response.json();
     setFormDetails(formInitialDetails);
     if (result.code === 200) {
       setStatus({ success: true, message: "Message sen successfully" });
@@ -50,42 +49,27 @@ export const Contact = () => {
       <Container>
         <Row>
           <Col md={6}>
-            <img src={contactImg} alt="Contact Me" />
+            <img style={{ width: "80%" }} src={contactImg} alt="Contact Me" />
           </Col>
           <Col md={6}>
             <h2>Get In Touch</h2>
-            <form onSubmit={handelSubmit}>
+            <form onSubmit={handleSubmit}>
               <Row>
                 <Col sm={6} className="px-1">
                   <input
                     type="text"
-                    value={formDetails.firstName}
-                    placeholder="First Name"
-                    onChange={(e) => onFormUpdate("firstName", e.target.value)}
+                    value={formDetails.name}
+                    placeholder="Name"
+                    onChange={(e) => onFormUpdate("name", e.target.value)}
                   />
                 </Col>
-                <Col size={12} sm={6} className="px-1">
-                  <input
-                    type="text"
-                    value={formDetails.lasttName}
-                    placeholder="Last Name"
-                    onChange={(e) => onFormUpdate("lastName", e.target.value)}
-                  />
-                </Col>
+
                 <Col size={12} sm={6} className="px-1">
                   <input
                     type="email"
                     value={formDetails.email}
                     placeholder="Email Address"
                     onChange={(e) => onFormUpdate("email", e.target.value)}
-                  />
-                </Col>
-                <Col size={12} sm={6} className="px-1">
-                  <input
-                    type="tel"
-                    value={formDetails.phone}
-                    placeholder="Phone No."
-                    onChange={(e) => onFormUpdate("phone", e.target.value)}
                   />
                 </Col>
                 <Col size={12} className="px-1">

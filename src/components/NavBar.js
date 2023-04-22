@@ -5,6 +5,7 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import logo from "../assets/img/logo.png";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
+import resume from "/Users/tiffanynchau/portfolio/src/Chau, Ngoc - Resume.pdf";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -32,7 +33,7 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/" id="777">
             <img src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -46,40 +47,41 @@ export const NavBar = () => {
                 className={
                   activeLink === "about" ? "active navbar-link" : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("home")}
+                onClick={() => onUpdateActiveLink("about")}
               >
                 About
               </Nav.Link>
 
               {/* EXPERIENCES SECTION  */}
               <Nav.Link
-                href="#experiences"
+                href="#skills"
                 className={
                   activeLink === "experiences"
                     ? "active navbar-link"
                     : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("experiences")}
+                onClick={() => onUpdateActiveLink("skills")}
               >
                 Experiences
               </Nav.Link>
 
               {/* PROJECTS SECTION  */}
               <Nav.Link
-                href="#projects"
+                href="#project"
                 className={
                   activeLink === "projects"
                     ? "active navbar-link"
                     : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink("projects")}
+                onClick={() => onUpdateActiveLink("project")}
               >
                 Projects
               </Nav.Link>
 
               {/* RESUME SECTION  */}
               <Nav.Link
-                href="#resume"
+                href={resume}
+                target="_blank"
                 className={
                   activeLink === "resume" ? "active navbar-link" : "navbar-link"
                 }
