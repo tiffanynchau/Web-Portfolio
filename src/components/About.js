@@ -23,29 +23,27 @@ export const About = () => {
               I am constantly seeking ways to improve my skills and stay
               up-to-date with the latest technologies.
             </p>
-            <p>
-              Here are a few technologies I’ve been working with recently:
-              <ul>
-                <Row style={{ color: "#64ffda" }}>
-                  <Col>
-                    <li> JavaScript (ES6+)</li>
-                    <li> TypeScript</li>
-                    <li> React</li>
-                    <li> Node.js</li>
-                    <li> Express</li>
-                  </Col>
-                  <Col>
-                    <li> HTML5 / CSS3</li>
-                    <li> SQL / NoSQL</li>
-                    <li> Bootstrap</li>
-                    <li> Material-UI </li>
-                  </Col>
-                </Row>
-              </ul>
-            </p>
+            <p>Here are a few technologies I’ve been working with recently:</p>
+            <ul>
+              <Row style={{ color: "#64ffda" }}>
+                <Col>
+                  <li> JavaScript (ES6+)</li>
+                  <li> TypeScript</li>
+                  <li> React</li>
+                  <li> Node.js</li>
+                  <li> Express</li>
+                </Col>
+                <Col>
+                  <li> HTML5 / CSS3</li>
+                  <li> SQL / NoSQL</li>
+                  <li> Bootstrap</li>
+                  <li> Material-UI </li>
+                </Col>
+              </Row>
+            </ul>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img className="headshot" src={selfphoto} />
+            <img className="headshot" src={selfphoto} alt="selfphoto" />
           </Col>
         </Row>
       </Container>

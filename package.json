@@ -1,8 +1,10 @@
 {
   "name": "portfolio",
+  "proxy": "http://localhost:5000",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mui/material": "^5.12.1",
@@ -11,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
     "cors": "^2.8.5",
+    "emailjs-com": "^3.2.0",
     "express": "^4.18.2",
     "nodemailer": "^6.9.1",
     "react": "^18.2.0",
@@ -20,7 +23,10 @@
     "react-multi-carousel": "^2.8.2",
     "react-router-dom": "^6.9.0",
     "react-router-hash-link": "^2.4.3",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.4",
+    "sweetalert2": "^11.7.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -46,5 +52,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

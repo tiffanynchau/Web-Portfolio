@@ -1,10 +1,9 @@
-import { Container, Row, Col, Tab } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import projImg1 from "../assets/img/DockLogo.png";
 import projImg2 from "../assets/img/HireHeroLogo.png";
 import projImg3 from "../assets/img/yummLogo.png";
 import projImg4 from "../assets/img/PawsLogo.png";
 import projImg5 from "../assets/img/Act8Logo.png";
-import projImg6 from "../assets/img/docker.png";
 import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
