@@ -1,3 +1,7 @@
+<div align="center" >
+<img src="logo-name.png" width="100" />
+</div>
+
 ## <p align="center">tiffanychau.com -v1</p>
 
 <div align="center"> The first version of tiffanychau.com built with React 
