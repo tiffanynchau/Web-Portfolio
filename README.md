@@ -1,6 +1,8 @@
-# 
+## <p align="center">tiffanychau.com -v1</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center"> The first version of tiffanychau.com built with React 
+<br>
+<br>
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
@@ -9,21 +11,31 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
+</div>
+<br>
+<br>
 
-![Screenshot](screenshotwp.jpg)
+<img 
+  src="screenshotwp.png"
+  title="screenshot"
+  style="margin: 100 100 100 100; max-width: 50px; max-heigh: 50px"
+/>
 
 
 
 
-## Available Scripts
+
+## Installation & Set up
 
 In the project directory, you can run:
+
+### `npm install`
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload when you make changes.
+
 
